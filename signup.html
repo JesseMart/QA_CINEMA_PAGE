@@ -42,64 +42,58 @@
 
             <form method="POST">
                 
-                <!-- title -->
-                <div>
-                    <label for="title">Title *</label>
-                    <input list="titles" required>
-
-                    <datalist id="titles">
-                        <option value="Mr.">Mr.</option>
-                        <option value="Mrs.">Mrs.</option>
-                    </datalist>
-                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">TITLE</span>
+                    <input type="text" class="form-control" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
 
                 <!-- firstname -->
-                <div>
-                    <label for="firstname">First Name *</label>
-                    <input id="firstname" type="text" name="firstname" required>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="firstname">First Name *</label>
+                    <input id="firstname" class="form-control" type="text" placeholder="First Name" name="firstname" required>
                 </div>
 
                 <!-- lastname -->
-                <div>
-                    <label for="lastname">Last Name *</label>
-                    <input id="lastname" type="text" name="lastname" required>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="lastname">Last Name *</label>
+                    <input id="lastname" type="text" class="form-control" placeholder="Last Name" name="lastname" required>
                 </div>
 
                 <!-- email -->
-                <div>
-                    <label for="email">Email *</label>
-                    <input id="email" type="email" name="email" required>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="email">Email *</label>
+                    <input id="email" class="form-control" type="email" name="email" required>
                 </div>
 
                 <!-- date of birth -->
-                <div>
-                    <label for="dob">Date of Birth</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text"  for="dob">Date of Birth</label>
                     <input id="dob" type="date" name="dob">
                 </div>
 
                 <!-- phone -->
-                <div>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <div class=" input-group input-group-sm mb-3">
+                    <label class="input-group-text" id="inputGroup-sizing-sm"  for="phone">Phone Number</label>
+                    <input id="phone" class="form-control" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 </div>
 
                 <!-- gender -->
                 <div>
-                    <label for="gender">Gender</label>
+                    <label class="badge bg-primary text-wrap" style="width: 6rem;" for="gender">Gender</label>
 
                     <div>
-                        <label for="male">Male</label>
+                        <label class="badge bg-primary text-wrap" style="width: 6rem;"  for="male">Male</label>
                         <input id="male" type="radio" name="gender" value="Male">
                     </div>
 
                     <div>
-                        <label for="female">Female</label>
+                        <label class="badge bg-primary text-wrap" style="width: 6rem;"  for="female"  >Female</label>
                         <input id="female" type="radio" name="gender" value="Female">
                     </div>
                 </div>
 
                 <!-- submit btn -->
-                <button type="submit">Sign me up!</button>
+                <button type="submit" class="btn btn-success btn-lg">Sign me up!</button>
 
             </form>
         </main>
