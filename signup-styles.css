@@ -81,6 +81,9 @@ header {
 }
 
 /* Footer styles */
+#footer {
+  margin-top: 100px;
+}
 
 footer::before {
   content: '';
